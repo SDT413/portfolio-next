@@ -22,7 +22,7 @@ export default function Home() {
               <h3>Backend Developer</h3>
             </div>
             <p>
-              I am a student at the University of Prague(PCU). I am interested in web development and I am currently learning Spring Boot.
+              I am a student at the University of Prague(PCU). I have 1 year experience with react, wordpress and node.js.
             </p>
             <div className="btn-box">
               <a href="#" className="btn">Hire Me</a>
@@ -38,6 +38,8 @@ export default function Home() {
 
           <div className="home-imgHover">
           </div>
+          <div className="home-img">
+          </div>
 
         </section>
 
@@ -51,7 +53,7 @@ export default function Home() {
           <div className="about-content">
             <h3>Backend Developer</h3>
             <p>
-              I am a student at the University of Prague(PCU). I am interested in web development and I am currently learning Spring Boot.
+              I am a student at the University of Prague(PCU). I have 1 year experience with react, wordpress and node.js.
             </p>
             <div className="btn-box btns">
               <a href="#" className="btn">Read More</a>
