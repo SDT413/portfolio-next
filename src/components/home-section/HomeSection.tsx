@@ -1,9 +1,34 @@
 import React, { FC } from "react";
 import styles from "./HomeSection.module.css";
+import {useActions} from "@/hooks/useActions";
 
 const HomeSection: FC = ({}) => {
+  const {setActiveTab} = useActions();
+  const cbRef = React.useRef<HTMLDivElement>(null);
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setActiveTab('home');
+            }
+          });
+        },
+        {
+          threshold: 0.5,
+        }
+    );
+    if (cbRef.current) {
+      observer.observe(cbRef.current);
+    }
+    return () => {
+      if (cbRef.current) {
+        observer.unobserve(cbRef.current);
+      }
+    };
+  }, [cbRef]);
   return (
-    <section className={styles.home} id={styles.home}>
+    <section className={styles.home} id={styles.home} ref={cbRef}>
       <div className={styles.home_content}>
         <h1>
           Hi, I am <span>Kyrylo Marchenko</span>
