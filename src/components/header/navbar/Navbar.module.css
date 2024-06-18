@@ -1,0 +1,12 @@
+.navbar a  {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+}
