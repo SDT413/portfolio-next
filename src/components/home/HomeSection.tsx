@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link";
 
 type Props = {}
 
@@ -10,32 +11,32 @@ function HomeSection({}: Props) {
         Hi, I am <span>Kyrylo Marchenko</span>
       </h1>
       <div className="text-animate">
-        <h3>Backend Developer</h3>
+        <h3>Fullstack Developer</h3>
       </div>
       <p>
         I am a student at the University of Prague(PCU). I have 1 year
         experience with react, wordpress and node.js.
       </p>
       <div className="btn-box">
-        <a href="#" className="btn">
+        <Link href="#" className="btn">
           Hire Me
-        </a>
-        <a href="#" className="btn">
-          Let's Talk
-        </a>
+        </Link>
+        <Link href="#" className="btn">
+          Contact Me
+        </Link>
       </div>
     </div>
 
     <div className="home-sci">
-      <a href="#">
+      <Link href="#">
         <i className="bx bxl-facebook"></i>
-      </a>
-      <a href="#">
+      </Link>
+      <Link href="#">
         <i className="bx bxl-twitter"></i>
-      </a>
-      <a href="#">
+      </Link>
+      <Link href="#">
         <i className="bx bxl-linkedin"></i>
-      </a>
+      </Link>
     </div>
 
     <div className="home-imgHover"></div>
