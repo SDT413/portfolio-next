@@ -86,8 +86,8 @@ const config: Config = {
         "gradient-conic":
             "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         'background': "url('/assets/images/images.png')",
-        'image-eye': "url('/assets/images/photo_2023-01-16_21-47-37.jpg')",
-        'image-home': "url('/assets/images/images.png')",
+        'image-eye': "url('/assets/images/home_photo.jpg')",
+        'image-home': "url('/assets/images/home_photo.jpg')",
       },
     },
   },
