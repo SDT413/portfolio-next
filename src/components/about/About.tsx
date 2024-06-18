@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 const About = () => {
   return (
-    <section className={styles.about} id={styles.about}>
+    <section className={styles.about} id="about">
       <h2 className={styles.heading}>
         About <span>Me</span>
       </h2>
