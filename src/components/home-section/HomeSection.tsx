@@ -20,10 +20,11 @@ const HomeSection: FC = ({}) => {
             Hire Me
           </a>
           <a href="#" className={styles.btn}>
-            Let's Talk
+            Let&apos;s Talk
           </a>
         </div>
       </div>
+      <div className={styles.home_img}></div>
 
       <div className={styles.home_sci}>
         <a href="#">
@@ -36,9 +37,6 @@ const HomeSection: FC = ({}) => {
           <i className="bx bxl-linkedin"></i>
         </a>
       </div>
-
-      <div className={styles.home_imgHover}></div>
-      <div className={styles.home_img}></div>
     </section>
   );
 };
