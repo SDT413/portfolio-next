@@ -24,6 +24,7 @@ const HomeSection: FC = ({}) => {
           </a>
         </div>
       </div>
+      <div className={styles.home_img}></div>
 
       <div className={styles.home_sci}>
         <a href="#">
@@ -37,8 +38,6 @@ const HomeSection: FC = ({}) => {
         </a>
       </div>
 
-      <div className={styles.home_imgHover}></div>
-      <div className={styles.home_img}></div>
     </section>
   );
 };
