@@ -1,4 +1,4 @@
-.navbar a  {
+.navbar_link {
     font-size: 1.7rem;
     font-weight: 500;
     color: var(--text-color);
@@ -6,7 +6,11 @@
     transition: .3s;
 }
 
-.navbar a:hover,
-.navbar a.active{
+.navbar_link:hover,
+.navbar_link_active{
+    font-size: 1.7rem;
+    font-weight: 500;
     color: var(--main-color);
+    margin-left: 3.5rem;
+    transition: .3s;
 }
