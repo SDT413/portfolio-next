@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
 
       <HomeSection />
-      
+        https://www.figma.com/design/JFYAqUbDoEcfxWCn6GNMZj/Figma-basics?node-id=1669-162202&t=5BRK6HWIOhCHlxsI-1
       <About />
     </>
   );
