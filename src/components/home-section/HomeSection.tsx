@@ -20,7 +20,7 @@ const HomeSection: FC = ({}) => {
             Hire Me
           </a>
           <a href="#" className={styles.btn}>
-            Let's Talk
+            Contact Me
           </a>
         </div>
       </div>
