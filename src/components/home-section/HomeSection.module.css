@@ -157,6 +157,15 @@
   justify-self: end;
 }
 
+
+
+
+@media (max-width: 1920px){
+  .home_content{
+    scale: 1;
+  }
+}
+
 @media (max-width: 1100px) {
   .home {
     grid-template:
@@ -169,6 +178,7 @@
     width: 22vw;
     height: 22vw;
     order: 1;
+    justify-self: center;
   }
   .home_content {
     scale: 0.9;

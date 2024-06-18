@@ -26,6 +26,8 @@ const HomeSection: FC = ({}) => {
       </div>
       <div className={styles.home_img}></div>
 
+
+      <div className={styles.tech_stack}>Tech stack | </div>
       <div className={styles.home_sci}>
         <a href="#">
           <i className="bx bxl-facebook"></i>
