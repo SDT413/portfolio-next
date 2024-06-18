@@ -1,14 +1,15 @@
-import React from 'react';
+import React from "react";
+import styles from "./Logo.module.css";
 
 const Logo = () => {
-    return (
-        <div>
-            <a href="#" className="logo">Kirill.</a>
-            <div className="bx bx-menu" id="menu-icon">
-
-            </div>
-        </div>
-    );
+  return (
+    <div>
+      <a href="#" className={styles.logo}>
+        Kyrylo.
+      </a>
+      <div className="bx bx-menu" id={styles.menu_icon}></div>
+    </div>
+  );
 };
 
 export default Logo;

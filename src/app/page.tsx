@@ -1,7 +1,7 @@
 "use client";
 import About from "@/components/about/About";
 import Header from "@/components/header/Header";
-import HomeSection from "@/components/home/HomeSection";
+import HomeSection from "@/components/home-section/HomeSection";
 import React from "react";
 
 export default function Home() {
