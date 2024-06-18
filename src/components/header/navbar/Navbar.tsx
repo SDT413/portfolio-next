@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from "next/link";
 import styles from "./Navbar.module.css";
+import {useVisual} from "@/hooks/useVisual";
 
 const Navbar = () => {
-
+    const visual = useVisual();
     return (
         <nav className={styles.navbar}>
             <Link href="#home" className="active">Home</Link>
