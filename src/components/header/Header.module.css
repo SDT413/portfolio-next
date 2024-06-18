@@ -1,12 +1,11 @@
 .header{
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: transparent;
+    background: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 999;
+    z-index: 2;
 }
