@@ -1,5 +1,12 @@
 import React, { FC } from "react";
 import styles from "./HomeSection.module.css";
+import HTMLSVG from "./assets/svgs/HTMLSVG";
+import CSSSVG from "./assets/svgs/CSSSVG";
+import JSSVG from "./assets/svgs/JSSVG";
+import ReactSVG from "./assets/svgs/ReactSVG";
+import NodeJSSVG from "./assets/svgs/NodeJSSVG";
+import TailwindSVG from "./assets/svgs/TailwindSVG";
+import SCSSSVG from "./assets/svgs/SCSSSVG";
 
 const HomeSection: FC = ({}) => {
   return (
@@ -26,8 +33,10 @@ const HomeSection: FC = ({}) => {
       </div>
       <div className={styles.home_img}></div>
 
-
-      <div className={styles.tech_stack}>Tech stack | </div>
+      <div className={styles.tech_stack}>
+        Tech stack | <HTMLSVG /> <CSSSVG /> <JSSVG /> <ReactSVG /> <NodeJSSVG />
+        <TailwindSVG /> <SCSSSVG />
+      </div>
       <div className={styles.home_sci}>
         <a href="#">
           <i className="bx bxl-facebook"></i>
@@ -39,7 +48,6 @@ const HomeSection: FC = ({}) => {
           <i className="bx bxl-linkedin"></i>
         </a>
       </div>
-
     </section>
   );
 };

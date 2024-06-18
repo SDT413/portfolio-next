@@ -4,8 +4,6 @@ import React from 'react'
 function SCSSSVG() {
   return (
     <svg
-    width="800px"
-    height="800px"
     viewBox="0 0 32 32"
     xmlns="http://www.w3.org/2000/svg"
   >

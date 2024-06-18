@@ -3,9 +3,10 @@
 .home {
   display: grid;
 
-  grid-template:
+  grid-template-areas:
     "content img"
-    "sci sci";
+    "stack . "
+    "sci . ";
 
   gap: 50px 0;
 
@@ -14,7 +15,7 @@
 }
 
 .home_content {
-  grid-area: "content";
+  grid-area: content;
   max-width: 60rem;
 }
 
@@ -102,7 +103,7 @@
 }
 
 .home_sci {
-  grid-area: "sci";
+  grid-area: sci;
   bottom: 4rem;
   width: 170px;
   display: flex;
@@ -147,7 +148,7 @@
 }
 
 .home_img {
-  grid-area: "img";
+  grid-area: img;
   @apply bg-image-home bg-no-repeat bg-cover bg-center;
   width: 20vw;
   height: 20vw;
@@ -157,11 +158,24 @@
   justify-self: end;
 }
 
+.tech_stack {
+  grid-area: stack;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
+  font-size: 1.8rem;
 
+  gap: 10px;
+}
 
-@media (max-width: 1920px){
-  .home_content{
+.tech_stack svg {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 1920px) {
+  .home_content {
     scale: 1;
   }
 }
