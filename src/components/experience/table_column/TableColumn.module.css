@@ -10,3 +10,27 @@
     font-weight: 700;
     margin-bottom: 10px;
 }
+
+.elements_wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.elements {
+    display: flex;
+    height: 210px;
+    margin-right: 20px;
+}
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+.line {
+    left: -10px;
+    width: 2px;
+    height: 210px;
+    background-color: var(--main-color);
+    position: relative;
+}
