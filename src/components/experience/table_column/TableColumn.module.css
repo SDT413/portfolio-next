@@ -1,0 +1,12 @@
+.table_column {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+}
+
+.column_heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,32 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    width: 600px;
+    height: 200px;
+    padding: 20px;
+}
+
+.section_date {
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.section_heading {
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.section_description {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
