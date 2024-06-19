@@ -4,15 +4,16 @@ import TableSection from "@/components/experience/table_column/table_section/Tab
 import {ITableData} from "@/components/interfaces/TableData";
 
 interface ITableColumnProps {
+    heading: string;
     data: ITableData[]
 }
 
-const TableColumn: FC<ITableColumnProps> = ({data}) => {
+const TableColumn: FC<ITableColumnProps> = ({heading, data}) => {
 
     return (
         <div className={styles.table_column}>
             <div className={styles.column_heading}>
-                Education
+                {heading}
             </div>
             {
                 data.map((data,index) => (

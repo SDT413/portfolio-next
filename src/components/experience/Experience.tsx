@@ -32,8 +32,8 @@ const Experience = () => {
         <div>
             <ExperienceHeading/>
             <div className={styles.table_of_columns}>
-            <TableColumn data={educationData}/>
-                <TableColumn data={experienceData}/>
+            <TableColumn data={educationData} heading={"Education"}/>
+                <TableColumn data={experienceData} heading={"Experience"}/>
             </div>
         </div>
     );
