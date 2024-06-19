@@ -8,13 +8,13 @@ import ArrowInSquareSVG from "./assets/ArrowInSquareSVG";
 function ProjectsSection() {
   return (
     <div className={styles.projects}>
-      <div className={styles.heading}>
-        <h2 className={styles.header}>Projects</h2>
-        <p className={styles.paragraph}>
-          Each project is a unique piece of development
-        </p>
-      </div>
       <div className={styles.projects_container}>
+        <div className={styles.heading}>
+          <h2 className={styles.header}>Projects</h2>
+          <p className={styles.paragraph}>
+            Each project is a unique piece of development
+          </p>
+        </div>
         <span className={styles.project_container}>
           <Image
             className={styles.project_img}
