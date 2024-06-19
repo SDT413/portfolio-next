@@ -87,7 +87,7 @@ const Navbar = () => {
         className={styles.navbar_overlay}
         style={{ width: isExpanded ? "100%" : "0%" }}
       >
-        <nav>
+        <nav className={styles.navbar_mobile}>
         <Link
           href="#home"
           className={

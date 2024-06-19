@@ -59,7 +59,7 @@
         transition: .3s ease-in-out;
     }
 
-    .navbar_overlay nav{
+    .navbar_overlay .navbar_mobile{
         display: flex;
         flex-direction: column;
         justify-content: center;

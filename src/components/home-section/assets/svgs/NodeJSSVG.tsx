@@ -1,9 +1,13 @@
 import React from 'react'
 
+type Props = {
+  className?: string;
+}
 
-function NodeJSSVG() {
+function NodeJSSVG({className}: Props) {
   return (
     <svg
+    className={className}
     viewBox="0 -99 512 512"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
