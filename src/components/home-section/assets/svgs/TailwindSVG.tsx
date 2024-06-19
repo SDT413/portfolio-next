@@ -1,9 +1,12 @@
 import React from 'react'
 
-
-function TailwindSVG() {
+type Props = {
+  className?: string;
+}
+function TailwindSVG({className}: Props) {
   return (
     <svg
+    className={className}
     viewBox="0 0 32 32"
     xmlns="http://www.w3.org/2000/svg"
   >

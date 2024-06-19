@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import styles from "./HomeSection.module.css";
-import {useActions} from "@/hooks/useActions";
+import { useActions } from "@/hooks/useActions";
 import HTMLSVG from "./assets/svgs/HTMLSVG";
 import CSSSVG from "./assets/svgs/CSSSVG";
 import JSSVG from "./assets/svgs/JSSVG";
@@ -10,20 +10,20 @@ import TailwindSVG from "./assets/svgs/TailwindSVG";
 import SCSSSVG from "./assets/svgs/SCSSSVG";
 
 const HomeSection: FC = ({}) => {
-  const {setActiveTab} = useActions();
+  const { setActiveTab } = useActions();
   const cbRef = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
     const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setActiveTab('home');
-            }
-          });
-        },
-        {
-          threshold: 0.5,
-        }
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveTab("home");
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      }
     );
     if (cbRef.current) {
       observer.observe(cbRef.current);
@@ -37,13 +37,13 @@ const HomeSection: FC = ({}) => {
   return (
     <section className={styles.home} id={styles.home} ref={cbRef}>
       <div className={styles.home_content}>
-        <h1>
+        <h1 className={styles.header1}>
           Hi, I am <span>Kyrylo Marchenko</span>
         </h1>
         <div className={styles.text_animate}>
-          <h3>Backend Developer</h3>
+          <h3 className={styles.header3}>Backend Developer</h3>
         </div>
-        <p>
+        <p className={styles.paragraph}>
           I am a student at the University of Prague(PCU). I have 1 year
           experience with react, wordpress and node.js.
         </p>
@@ -59,17 +59,21 @@ const HomeSection: FC = ({}) => {
       <div className={styles.home_img}></div>
 
       <div className={styles.tech_stack}>
-        Tech stack | <HTMLSVG /> <CSSSVG /> <JSSVG /> <ReactSVG /> <NodeJSSVG />
-        <TailwindSVG /> <SCSSSVG />
+        Tech stack | <HTMLSVG className={styles.icon} />{" "}
+        <CSSSVG className={styles.icon} /> <JSSVG className={styles.icon} />{" "}
+        <ReactSVG className={styles.icon} />{" "}
+        <NodeJSSVG className={styles.icon} />
+        <TailwindSVG className={styles.icon} />{" "}
+        <SCSSSVG className={styles.icon} />
       </div>
       <div className={styles.home_sci}>
-        <a href="#">
+        <a href="#" className={styles.sci_link}>
           <i className="bx bxl-facebook"></i>
         </a>
-        <a href="#">
+        <a href="#" className={styles.sci_link}>
           <i className="bx bxl-twitter"></i>
         </a>
-        <a href="#">
+        <a href="#" className={styles.sci_link}>
           <i className="bx bxl-linkedin"></i>
         </a>
       </div>
