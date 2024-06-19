@@ -68,3 +68,10 @@
   font: 500 15px/18px Poppins;
   color: #fff;
 }
+
+
+@media (max-width: 600px) {
+  .contact_info{
+    flex-direction: column;
+  }
+}
