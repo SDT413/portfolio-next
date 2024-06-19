@@ -4,10 +4,35 @@ import styles from "./ProjectsSection.module.css";
 import placeholder from "./assets/placeholder.jpg";
 import GitHubSVG from "./assets/GitHubSVG";
 import ArrowInSquareSVG from "./assets/ArrowInSquareSVG";
+import {useActions} from "@/hooks/useActions";
 
 function ProjectsSection() {
+  const {setActiveTab} = useActions();
+  const cbRef = React.useRef<HTMLDivElement>(null);
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setActiveTab('projects');
+            }
+          });
+        },
+        {
+          threshold: 0.5,
+        }
+    );
+    if (cbRef.current) {
+      observer.observe(cbRef.current);
+    }
+    return () => {
+      if (cbRef.current) {
+        observer.unobserve(cbRef.current);
+      }
+    };
+  }, [cbRef]);
   return (
-    <div className={styles.projects}>
+    <div className={styles.projects} id="projects" ref={cbRef}>
       <div className={styles.projects_container}>
         <div className={styles.heading}>
           <h2 className={styles.header}>Projects</h2>
