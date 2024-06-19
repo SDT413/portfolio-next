@@ -2,8 +2,33 @@ import React from 'react';
 import styles from './Experience.module.css';
 import ExperienceHeading from "@/components/experience/experience-heading/ExperienceHeading";
 import TableColumn from "@/components/experience/table_column/TableColumn";
+import {useActions} from "@/hooks/useActions";
 
 const Experience = () => {
+    const {setActiveTab} = useActions();
+    const cbRef = React.useRef<HTMLDivElement>(null);
+    React.useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveTab('experience');
+                    }
+                });
+            },
+            {
+                threshold: 0.5,
+            }
+        );
+        if (cbRef.current) {
+            observer.observe(cbRef.current);
+        }
+        return () => {
+            if (cbRef.current) {
+                observer.unobserve(cbRef.current);
+            }
+        };
+    }, [cbRef]);
     const educationData = [
         {
             date: "2022 - Present",
@@ -28,10 +53,11 @@ const Experience = () => {
             description: "Ongoing Full-Stack Developer"
         }
     ]
+
     return (
         <div>
             <ExperienceHeading/>
-            <div className={styles.table_of_columns}>
+            <div className={styles.table_of_columns} ref={cbRef} id = "experience">
             <TableColumn data={educationData} heading={"Education"}/>
                 <TableColumn data={experienceData} heading={"Experience"}/>
             </div>
