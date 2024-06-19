@@ -58,7 +58,7 @@ const Experience = () => {
         <div id = "experience" ref={cbRef}>
             <ExperienceHeading/>
             <div className={styles.table_of_columns}>
-            <TableColumn data={educationData} heading={"Education"}/>
+                <TableColumn data={educationData} heading={"Education"}/>
                 <TableColumn data={experienceData} heading={"Experience"}/>
             </div>
         </div>
