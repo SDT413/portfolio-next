@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <div>
       <a href="#" className={styles.logo}>
-        Kyrylo.
+        Kirill.
       </a>
       <div className="bx bx-menu" id={styles.menu_icon}></div>
     </div>
