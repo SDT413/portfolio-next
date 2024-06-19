@@ -71,7 +71,7 @@ const Navbar = () => {
               : styles.navbar_link
           }
           onClick={() => {
-            setActiveTab("education");
+            setActiveTab("experience");
             toggleExpansion();
           }}
         >
@@ -145,14 +145,14 @@ const Navbar = () => {
             About
           </Link>
           <Link
-            href="#education"
+            href="#experience"
             className={
-              visual.activeTab === "education"
+              visual.activeTab === "experience"
                 ? styles.navbar_link_active
                 : styles.navbar_link
             }
             onClick={() => {
-              setActiveTab("education");
+              setActiveTab("experience");
               toggleExpansion();
             }}
           >
