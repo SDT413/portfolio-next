@@ -44,7 +44,6 @@ const Navbar = () => {
           }
           onClick={() => {
             setActiveTab("home");
-            toggleExpansion();
           }}
         >
           Home
@@ -58,7 +57,6 @@ const Navbar = () => {
           }
           onClick={() => {
             setActiveTab("about");
-            toggleExpansion();
           }}
         >
           About
@@ -72,7 +70,6 @@ const Navbar = () => {
           }
           onClick={() => {
             setActiveTab("experience");
-            toggleExpansion();
           }}
         >
           Experience
@@ -86,7 +83,6 @@ const Navbar = () => {
           }
           onClick={() => {
             setActiveTab("projects");
-            toggleExpansion();
           }}
         >
           Projects
@@ -100,7 +96,6 @@ const Navbar = () => {
           }
           onClick={() => {
             setActiveTab("contact");
-            toggleExpansion();
           }}
         >
           Contact
