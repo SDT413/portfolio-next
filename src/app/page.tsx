@@ -5,6 +5,7 @@ import HomeSection from "@/components/home-section/HomeSection";
 import React from "react";
 import Experience from "@/components/experience/Experience";
 import Contacts from "@/components/contacts/Contacts";
+import ProjectsSection from "@/components/projects-section/ProjectsSection";
 
 export default function Home() {
   return (
@@ -17,7 +18,9 @@ export default function Home() {
 
       <Experience />
 
-      <Contacts/>
+      <ProjectsSection />
+      
+      <Contacts />
     </>
   );
 }
