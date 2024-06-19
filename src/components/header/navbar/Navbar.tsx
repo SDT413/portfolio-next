@@ -42,15 +42,15 @@ const Navbar = () => {
           About
         </Link>
         <Link
-          href="#education"
+          href="#experience"
           className={
-            visual.activeTab === "education"
+            visual.activeTab === "experience"
               ? styles.navbar_link_active
               : styles.navbar_link
           }
-          onClick={() => {setActiveTab("education"); toggleExpansion()}}
+          onClick={() => {setActiveTab("experience"); toggleExpansion()}}
         >
-          Education
+          Experience
         </Link>
         <Link
           href="#projects"

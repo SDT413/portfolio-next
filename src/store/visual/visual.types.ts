@@ -1,4 +1,4 @@
 export interface IVisualInitialState {
-     activeTab: "home" | "about" | "education" | "projects" | "contact";
+     activeTab: "home" | "about" | "experience" | "projects" | "contact";
 }
 
