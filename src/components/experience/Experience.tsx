@@ -19,8 +19,6 @@ const Experience = () => {
                         I am currently pursuing my B.Tech in Computer Science and Engineering from the Indian Institute of Information Technology, Una.
                     </div>
                 </div>
-
-
             </div>
         </div>
     );
