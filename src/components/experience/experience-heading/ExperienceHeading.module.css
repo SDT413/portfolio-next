@@ -8,3 +8,9 @@
 .second_word {
     color: var(--main-color);
 }
+
+@media (max-width: 640px) {
+    .heading {
+        margin-right: 0;
+    }
+}

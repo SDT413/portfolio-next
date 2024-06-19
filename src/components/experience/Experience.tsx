@@ -55,7 +55,7 @@ const Experience = () => {
     ]
 
     return (
-        <div id = "experience" ref={cbRef}>
+        <div className={styles.container} id = "experience" ref={cbRef}>
             <ExperienceHeading/>
             <div className={styles.table_of_columns}>
                 <TableColumn data={educationData} heading={"Education"}/>

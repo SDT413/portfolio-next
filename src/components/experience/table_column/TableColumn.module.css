@@ -35,3 +35,11 @@
     background-color: var(--main-color);
     position: relative;
 }
+
+@media (max-width: 640px) {
+    .column_heading {
+        font-size: 24px;
+        text-align: center;
+    }
+
+}
