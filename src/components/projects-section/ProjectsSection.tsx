@@ -4,42 +4,51 @@ import styles from "./ProjectsSection.module.css";
 import placeholder from "./assets/placeholder.jpg";
 import GitHubSVG from "./assets/GitHubSVG";
 import ArrowInSquareSVG from "./assets/ArrowInSquareSVG";
-import {Observer} from "@/utils/observer";
+import { Observer } from "@/utils/observer";
 import Link from "next/link";
-import {ProjectData} from "@/components/interfaces/ProjectData";
+import { ProjectData } from "@/components/interfaces/ProjectData";
+import ProjectElement from "./project-element/ProjectElement";
 
 function ProjectsSection() {
   const cbRef = Observer("projects");
   const projects: ProjectData[] = [
     {
       title: "Project Title",
-      description: "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
+      description:
+        "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
       technologies: ["React", "CSS"],
       githubLink: "#",
       liveDemoLink: "#",
+      image: placeholder,
     },
     {
       title: "Project Title",
-      description: "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
+      description:
+        "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
       technologies: ["React", "CSS"],
       githubLink: "#",
       liveDemoLink: "#",
+      image: placeholder,
     },
     {
       title: "Project Title",
-      description: "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
+      description:
+        "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
       technologies: ["React", "CSS"],
       githubLink: "#",
       liveDemoLink: "#",
+      image: placeholder,
     },
     {
       title: "Project Title",
-      description: "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
+      description:
+        "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
       technologies: ["React", "CSS"],
       githubLink: "#",
       liveDemoLink: "#",
+      image: placeholder,
     },
-    ];
+  ];
   return (
     <div className={styles.projects} id="projects" ref={cbRef}>
       <div className={styles.projects_container}>
@@ -49,150 +58,9 @@ function ProjectsSection() {
             Each project is a unique piece of development
           </p>
         </div>
-        <span className={styles.project_container}>
-          <a href="#">
-            <Image
-              className={styles.project_img}
-              src={placeholder}
-              alt="Project placeholder"
-            />
-          </a>
-          <div className={styles.project_info}>
-            <h3 className={styles.project_title}>Project Title</h3>
-            <p className={styles.project_description}>
-              Project description Project descriptionProject descriptionProject
-              descriptionProject descriptionProject descriptionProject
-              descriptionProject descriptionProject descriptionProject
-              description
-            </p>
-            <span className={styles.project_technologies}>
-              <h3>React</h3>
-              <h3>CSS</h3>
-            </span>
-            <span className={styles.project_links}>
-              <div className={styles.project_link}>
-                <a className={styles.project_link_address}>Code</a>
-                <span className={styles.project_link_icon}>
-                  <GitHubSVG className={styles.project_link_icon_svg} />
-                </span>
-              </div>
-              <div className={styles.project_link}>
-                <a className={styles.project_link_address}>Live Demo</a>
-                <span className={styles.project_link_icon}>
-                  <ArrowInSquareSVG className={styles.project_link_icon_svg} />
-                </span>
-              </div>
-            </span>
-          </div>
-        </span>
-        <span className={styles.project_container}>
-          <a href="#">
-            <Image
-              className={styles.project_img}
-              src={placeholder}
-              alt="Project placeholder"
-            />
-          </a>
-          <div className={styles.project_info}>
-            <h3 className={styles.project_title}>Project Title</h3>
-            <p className={styles.project_description}>
-              Project description Project descriptionProject descriptionProject
-              descriptionProject descriptionProject descriptionProject
-              descriptionProject descriptionProject descriptionProject
-              description
-            </p>
-            <span className={styles.project_technologies}>
-              <h3>React</h3>
-              <h3>CSS</h3>
-            </span>
-            <span className={styles.project_links}>
-              <div className={styles.project_link}>
-                <a className={styles.project_link_address}>Code</a>
-                <span className={styles.project_link_icon}>
-                  <GitHubSVG className={styles.project_link_icon_svg} />
-                </span>
-              </div>
-              <div className={styles.project_link}>
-                <a className={styles.project_link_address}>Live Demo</a>
-                <span className={styles.project_link_icon}>
-                  <ArrowInSquareSVG className={styles.project_link_icon_svg} />
-                </span>
-              </div>
-            </span>
-          </div>
-        </span>
-        <span className={styles.project_container}>
-          <a href="#">
-            <Image
-              className={styles.project_img}
-              src={placeholder}
-              alt="Project placeholder"
-            />
-          </a>
-          <div className={styles.project_info}>
-            <h3 className={styles.project_title}>Project Title</h3>
-            <p className={styles.project_description}>
-              Project description Project descriptionProject descriptionProject
-              descriptionProject descriptionProject descriptionProject
-              descriptionProject descriptionProject descriptionProject
-              description
-            </p>
-            <span className={styles.project_technologies}>
-              <h3>React</h3>
-              <h3>CSS</h3>
-            </span>
-            <span className={styles.project_links}>
-              <div className={styles.project_link}>
-                <a className={styles.project_link_address}>Code</a>
-                <span className={styles.project_link_icon}>
-                  <GitHubSVG className={styles.project_link_icon_svg} />
-                </span>
-              </div>
-              <div className={styles.project_link}>
-                <a className={styles.project_link_address}>Live Demo</a>
-                <span className={styles.project_link_icon}>
-                  <ArrowInSquareSVG className={styles.project_link_icon_svg} />
-                </span>
-              </div>
-            </span>
-          </div>
-        </span>
-        <span className={styles.project_container}>
-          <a href="#">
-            <Image
-              className={styles.project_img}
-              src={placeholder}
-              alt="Project placeholder"
-            />
-          </a>
-          <div className={styles.project_info}>
-            <h3 className={styles.project_title}>Project Title</h3>
-            <p className={styles.project_description}>
-              Project description Project descriptionProject descriptionProject
-              descriptionProject descriptionProject descriptionProject
-              descriptionProject descriptionProject descriptionProject
-              description
-            </p>
-            <span className={styles.project_technologies}>
-              <h3>React</h3>
-              <h3>CSS</h3>
-            </span>
-            <span className={styles.project_links}>
-              <div className={styles.project_link}>
-                <a className={styles.project_link_address}>Code</a>
-                <span className={styles.project_link_icon}>
-                  <GitHubSVG className={styles.project_link_icon_svg} />
-                </span>
-              </div>
-              <div className={styles.project_link}>
-                <a className={styles.project_link_address}>Live Demo</a>
-                <span className={styles.project_link_icon}>
-                  <ArrowInSquareSVG className={styles.project_link_icon_svg} />
-                </span>
-              </div>
-            </span>
-          </div>
-        </span>
+        {projects.map((project: ProjectData, index: number) => (
+          <ProjectElement project={project} key={index} />
+        ))}
       </div>
     </div>
   );
