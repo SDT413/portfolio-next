@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./Logo.module.css";
+import Link from "next/link";
 
 const Logo = () => {
   return (
     <div className={styles.container}>
-      <a href="#" className={styles.logo}>
+      <Link href="#home" className={styles.logo}>
         Kirill.
-      </a>
+      </Link>
       <div className="bx bx-menu" id={styles.menu_icon}></div>
     </div>
   );

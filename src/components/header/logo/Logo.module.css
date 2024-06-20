@@ -3,10 +3,12 @@
   font-weight: 600;
   color: var(--text-color);
   transition: scale 0.3s ease;
+  position: fixed;
+  top: 1rem;
 }
 
 .logo:hover {
-   transform: scale(1.2);
+  scale: 1.2;
 }
 #menu_icon {
   font-size: 3.6rem;
