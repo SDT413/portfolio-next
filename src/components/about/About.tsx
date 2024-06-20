@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./About.module.css";
 import classNames from "classnames";
 import {useVisual} from "@/hooks/useVisual";
@@ -7,6 +7,11 @@ import {useActions} from "@/hooks/useActions";
 const About = () => {
     const {setActiveTab} = useActions();
     const cbRef = React.useRef<HTMLDivElement>(null);
+    const [isBlinking, setIsBlinking] = useState<boolean>(false);
+
+    const toggleBlink = () => {
+      setIsBlinking(!isBlinking);
+    };
     React.useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -34,7 +39,10 @@ const About = () => {
       <h2 className={styles.heading}>
         About <span>Me</span>
       </h2>
-      <div className={styles.about_img}>
+      <div className={classNames(styles.about_img, isBlinking ? styles.blink : "")} onClick={toggleBlink}>
+        <div className={classNames(styles.eyelid, styles.top)}></div>
+        <div className={styles.pupil}></div>
+        <div className={classNames(styles.eyelid, styles.bottom)}></div>
         <span className={styles.circle_spin}></span>
       </div>
 
