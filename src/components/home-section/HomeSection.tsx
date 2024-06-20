@@ -8,6 +8,8 @@ import ReactSVG from "./assets/svgs/ReactSVG";
 import NodeJSSVG from "./assets/svgs/NodeJSSVG";
 import TailwindSVG from "./assets/svgs/TailwindSVG";
 import SCSSSVG from "./assets/svgs/SCSSSVG";
+import NextJSSVG from "./assets/svgs/NextJSSVG";
+import TSSVG from "./assets/svgs/TSSVG";
 
 const HomeSection: FC = ({}) => {
   const { setActiveTab } = useActions();
@@ -59,12 +61,23 @@ const HomeSection: FC = ({}) => {
       <div className={styles.home_img}></div>
 
       <div className={styles.tech_stack}>
-        Tech stack | <HTMLSVG className={styles.icon} />{" "}
-        <CSSSVG className={styles.icon} /> <JSSVG className={styles.icon} />{" "}
-        <ReactSVG className={styles.icon} />{" "}
-        <NodeJSSVG className={styles.icon} />
-        <TailwindSVG className={styles.icon} />{" "}
-        <SCSSSVG className={styles.icon} />
+        Tech stack |
+        <span className={styles.tech_stack_item}>
+          <HTMLSVG className={styles.icon} /> <CSSSVG className={styles.icon} />
+        </span>
+        <span className={styles.tech_stack_item}>
+          <JSSVG className={styles.icon} />
+          <TSSVG className={styles.icon} style={{ transform: "scale(0.9)" }} />
+        </span>
+        <span className={styles.tech_stack_item}>
+          <ReactSVG className={styles.icon} />
+          <NextJSSVG className={styles.icon} />
+          <NodeJSSVG className={styles.icon} />
+        </span>
+        <span className={styles.tech_stack_item}>
+          <TailwindSVG className={styles.icon} />
+          <SCSSSVG className={styles.icon} />
+        </span>
       </div>
       <div className={styles.home_sci}>
         <a href="#" className={styles.sci_link}>

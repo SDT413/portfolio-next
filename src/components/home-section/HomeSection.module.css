@@ -172,6 +172,23 @@
   gap: 10px;
 }
 
+.tech_stack_item {
+  position: relative;
+  cursor: pointer;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+
+  transition: transform 0.3s ease-in-out;
+  margin-right: 5px;
+}
+
+.tech_stack_item:hover {
+  transform: translateY(-15px);
+}
+
 .tech_stack .icon {
   width: 30px;
   height: 30px;
@@ -191,6 +208,7 @@
       "stack"
       "sci";
     justify-items: center;
+    justify-content: center;
   }
   .home_img {
     width: 22vw;
