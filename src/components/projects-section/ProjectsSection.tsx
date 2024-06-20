@@ -60,7 +60,7 @@ function ProjectsSection() {
             </span>
             <span className={styles.project_links}>
               <div className={styles.project_link}>
-                <a className={styles.project_link_address}>GitHub</a>
+                <a className={styles.project_link_address}>Code</a>
                 <span className={styles.project_link_icon}>
                   <GitHubSVG className={styles.project_link_icon_svg} />
                 </span>
@@ -94,7 +94,7 @@ function ProjectsSection() {
             </span>
             <span className={styles.project_links}>
               <div className={styles.project_link}>
-                <a className={styles.project_link_address}>GitHub</a>
+                <a className={styles.project_link_address}>Code</a>
                 <span className={styles.project_link_icon}>
                   <GitHubSVG className={styles.project_link_icon_svg} />
                 </span>
@@ -128,7 +128,7 @@ function ProjectsSection() {
             </span>
             <span className={styles.project_links}>
               <div className={styles.project_link}>
-                <a className={styles.project_link_address}>GitHub</a>
+                <a className={styles.project_link_address}>Code</a>
                 <span className={styles.project_link_icon}>
                   <GitHubSVG className={styles.project_link_icon_svg} />
                 </span>
@@ -162,7 +162,7 @@ function ProjectsSection() {
             </span>
             <span className={styles.project_links}>
               <div className={styles.project_link}>
-                <a className={styles.project_link_address}>GitHub</a>
+                <a className={styles.project_link_address}>Code</a>
                 <span className={styles.project_link_icon}>
                   <GitHubSVG className={styles.project_link_icon_svg} />
                 </span>

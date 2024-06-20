@@ -10,7 +10,13 @@
   justify-content: center;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1430px){
+  .table_of_columns {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1024px){
   .container {
     display: flex;
     flex-direction: column;
@@ -22,3 +28,5 @@
     gap: 20px;
   }
 }
+
+
