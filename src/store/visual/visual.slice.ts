@@ -13,7 +13,6 @@ export const visualSlice = createSlice({
     reducers: {
         setActiveTab: (state, action: PayloadAction<IVisualInitialState['activeTab']>) => {
             state.activeTab = action.payload;
-            window.location.href = `#${action.payload}`;
         }
     }
 });
