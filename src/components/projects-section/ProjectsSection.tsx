@@ -5,9 +5,41 @@ import placeholder from "./assets/placeholder.jpg";
 import GitHubSVG from "./assets/GitHubSVG";
 import ArrowInSquareSVG from "./assets/ArrowInSquareSVG";
 import {Observer} from "@/utils/observer";
+import Link from "next/link";
+import {ProjectData} from "@/components/interfaces/ProjectData";
 
 function ProjectsSection() {
   const cbRef = Observer("projects");
+  const projects: ProjectData[] = [
+    {
+      title: "Project Title",
+      description: "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
+      technologies: ["React", "CSS"],
+      githubLink: "#",
+      liveDemoLink: "#",
+    },
+    {
+      title: "Project Title",
+      description: "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
+      technologies: ["React", "CSS"],
+      githubLink: "#",
+      liveDemoLink: "#",
+    },
+    {
+      title: "Project Title",
+      description: "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
+      technologies: ["React", "CSS"],
+      githubLink: "#",
+      liveDemoLink: "#",
+    },
+    {
+      title: "Project Title",
+      description: "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
+      technologies: ["React", "CSS"],
+      githubLink: "#",
+      liveDemoLink: "#",
+    },
+    ];
   return (
     <div className={styles.projects} id="projects" ref={cbRef}>
       <div className={styles.projects_container}>
