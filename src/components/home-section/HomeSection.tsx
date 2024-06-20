@@ -40,7 +40,7 @@ const HomeSection: FC = ({}) => {
     <section className={styles.home} id={styles.home} ref={cbRef}>
       <div className={styles.home_content}>
         <h1 className={styles.header1}>
-          Hi, I am <span>Kyrylo Marchenko</span>
+          Hi, I am <span>Kirill Marchenko</span>
         </h1>
         <div className={styles.text_animate}>
           <h3 className={styles.header3}>Backend Developer</h3>
