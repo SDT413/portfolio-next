@@ -3,8 +3,9 @@
   font-weight: 600;
   color: var(--text-color);
   transition: scale 0.3s ease;
-  position: fixed;
-  top: 1rem;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
 }
 
 .logo:hover {
