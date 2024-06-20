@@ -9,12 +9,21 @@ const About = () => {
     const {setActiveTab} = useActions();
     const cbRef = React.useRef<HTMLDivElement>(null);
     const [isBlinking, setIsBlinking] = useState<boolean>(false);
+    const [isAnimated, setIsAnimated] = useState<boolean>(false);
 
     const toggleBlink = () => {
-      setIsBlinking(!isBlinking);
+      if(isAnimated){
+        return;
+      }
+      setIsAnimated(true);
+      setIsBlinking(true);
       setTimeout(() => {
         setIsBlinking(false);
+       
       }, 1000);
+      setTimeout(() => {
+        setIsAnimated(false);
+      }, 2000);
     };
     React.useEffect(() => {
         const observer = new IntersectionObserver(
