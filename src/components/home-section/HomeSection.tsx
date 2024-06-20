@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import {FC, useEffect, useRef} from "react";
 import styles from "./HomeSection.module.css";
 import { useActions } from "@/hooks/useActions";
 import HTMLSVG from "./assets/svgs/HTMLSVG";
@@ -13,8 +13,8 @@ import TSSVG from "./assets/svgs/TSSVG";
 
 const HomeSection: FC = ({}) => {
   const { setActiveTab } = useActions();
-  const cbRef = React.useRef<HTMLDivElement>(null);
-  React.useEffect(() => {
+  const cbRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
