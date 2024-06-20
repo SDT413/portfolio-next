@@ -32,74 +32,121 @@ const Navbar = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  useEffect(() => {
+
+  }, [visual.activeTab]);
   return (
     <>
       <nav className={styles.navbar}>
-        <Link
-          href="#home"
-          className={
-            visual.activeTab === "home"
-              ? styles.navbar_link_active
-              : styles.navbar_link
-          }
-          onClick={() => {
-            setActiveTab("home");
-          }}
-        >
-          Home
-        </Link>
-        <Link
-          href="#about"
-          className={
-            visual.activeTab === "about"
-              ? styles.navbar_link_active
-              : styles.navbar_link
-          }
-          onClick={() => {
-            setActiveTab("about");
-          }}
-        >
-          About
-        </Link>
-        <Link
-          href="#experience"
-          className={
-            visual.activeTab === "experience"
-              ? styles.navbar_link_active
-              : styles.navbar_link
-          }
-          onClick={() => {
-            setActiveTab("experience");
-          }}
-        >
-          Experience
-        </Link>
-        <Link
-          href="#projects"
-          className={
-            visual.activeTab === "projects"
-              ? styles.navbar_link_active
-              : styles.navbar_link
-          }
-          onClick={() => {
-            setActiveTab("projects");
-          }}
-        >
-          Projects
-        </Link>
-        <Link
-          href="#contact"
-          className={
-            visual.activeTab === "contact"
-              ? styles.navbar_link_active
-              : styles.navbar_link
-          }
-          onClick={() => {
-            setActiveTab("contact");
-          }}
-        >
-          Contact
-        </Link>
+        {
+          visual.activeTab === "home" ? <Link
+              href="#home"
+              className={styles.navbar_link_active}
+              onClick={() => {
+                setActiveTab("home");
+              }}
+          >
+            Home
+          </Link>
+            :
+            <Link
+              href="#home"
+              className={styles.navbar_link}
+              onClick={() => {
+                setActiveTab("home");
+              }}
+            >
+                Home
+            </Link>
+        }
+        {
+          visual.activeTab === "about" ?
+                <Link
+                    href="#about"
+                    className={styles.navbar_link_active}
+                    onClick={() => {
+                        setActiveTab("about");
+                    }}
+                >
+                    About
+                </Link>
+              :
+              <Link
+                  href="#about"
+                  className={styles.navbar_link}
+                  onClick={() => {
+                    setActiveTab("about");
+                  }}
+              >
+                About
+              </Link>
+        }
+        {
+          visual.activeTab === "experience" ?
+                <Link
+                    href="#experience"
+                    className={styles.navbar_link_active}
+                    onClick={() => {
+                        setActiveTab("experience");
+                    }}
+                >
+                    Experience
+                </Link>
+              :
+              <Link
+                  href="#experience"
+                  className={styles.navbar_link}
+                  onClick={() => {
+                    setActiveTab("experience");
+                  }}
+              >
+                Experience
+              </Link>
+        }
+        {
+          visual.activeTab === "projects" ?
+              <Link
+                  href="#projects"
+                  className={styles.navbar_link_active}
+                  onClick={() => {
+                    setActiveTab("projects");
+                  }}
+              >
+                Projects
+              </Link>
+              :
+              <Link
+                  href="#projects"
+                  className={styles.navbar_link}
+                  onClick={() => {
+                    setActiveTab("projects");
+                  }}
+              >
+                Projects
+              </Link>
+        }
+        {
+          visual.activeTab === "contact" ?
+              <Link
+                  href="#contact"
+                  className={styles.navbar_link_active}
+                  onClick={() => {
+                    setActiveTab("contact");
+                  }}
+              >
+                Contact
+              </Link>
+              :
+              <Link
+                  href="#contact"
+                  className={styles.navbar_link}
+                  onClick={() => {
+                    setActiveTab("contact");
+                  }}
+              >
+                Contact
+              </Link>
+        }
       </nav>
       <div className={styles.burger} onClick={toggleExpansion}>
         <span className={styles.line}></span>
@@ -111,76 +158,115 @@ const Navbar = () => {
         style={{ width: isExpanded ? "100%" : "0%" }}
       >
         <nav className={styles.navbar_mobile}>
-          <Link
-            href="#home"
-            className={
-              visual.activeTab === "home"
-                ? styles.navbar_link_active
-                : styles.navbar_link
-            }
-            onClick={() => {
-              setActiveTab("home");
-              toggleExpansion();
-            }}
-          >
-            Home
-          </Link>
-          <Link
-            href="#about"
-            className={
-              visual.activeTab === "about"
-                ? styles.navbar_link_active
-                : styles.navbar_link
-            }
-            onClick={() => {
-              setActiveTab("about");
-              toggleExpansion();
-            }}
-          >
-            About
-          </Link>
-          <Link
-            href="#experience"
-            className={
-              visual.activeTab === "experience"
-                ? styles.navbar_link_active
-                : styles.navbar_link
-            }
-            onClick={() => {
-              setActiveTab("experience");
-              toggleExpansion();
-            }}
-          >
-            Education
-          </Link>
-          <Link
-            href="#projects"
-            className={
-              visual.activeTab === "projects"
-                ? styles.navbar_link_active
-                : styles.navbar_link
-            }
-            onClick={() => {
-              setActiveTab("projects");
-              toggleExpansion();
-            }}
-          >
-            Projects
-          </Link>
-          <Link
-            href="#contact"
-            className={
-              visual.activeTab === "contact"
-                ? styles.navbar_link_active
-                : styles.navbar_link
-            }
-            onClick={() => {
-              setActiveTab("contact");
-              toggleExpansion();
-            }}
-          >
-            Contact
-          </Link>
+          {
+            visual.activeTab === "home" ? <Link
+                    href="#home"
+                    className={styles.navbar_link_active}
+                    onClick={() => {
+                      setActiveTab("home");
+                    }}
+                >
+                  Home
+                </Link>
+                :
+                <Link
+                    href="#home"
+                    className={styles.navbar_link}
+                    onClick={() => {
+                      setActiveTab("home");
+                    }}
+                >
+                  Home
+                </Link>
+          }
+          {
+            visual.activeTab === "about" ?
+                <Link
+                    href="#about"
+                    className={styles.navbar_link_active}
+                    onClick={() => {
+                      setActiveTab("about");
+                    }}
+                >
+                  About
+                </Link>
+                :
+                <Link
+                    href="#about"
+                    className={styles.navbar_link}
+                    onClick={() => {
+                      setActiveTab("about");
+                    }}
+                >
+                  About
+                </Link>
+          }
+          {
+            visual.activeTab === "experience" ?
+                <Link
+                    href="#experience"
+                    className={styles.navbar_link_active}
+                    onClick={() => {
+                      setActiveTab("experience");
+                    }}
+                >
+                  Experience
+                </Link>
+                :
+                <Link
+                    href="#experience"
+                    className={styles.navbar_link}
+                    onClick={() => {
+                      setActiveTab("experience");
+                    }}
+                >
+                  Experience
+                </Link>
+          }
+          {
+            visual.activeTab === "projects" ?
+                <Link
+                    href="#projects"
+                    className={styles.navbar_link_active}
+                    onClick={() => {
+                      setActiveTab("projects");
+                    }}
+                >
+                  Projects
+                </Link>
+                :
+                <Link
+                    href="#projects"
+                    className={styles.navbar_link}
+                    onClick={() => {
+                      setActiveTab("projects");
+                    }}
+                >
+                  Projects
+                </Link>
+          }
+          {
+            visual.activeTab === "contact" ?
+                <Link
+                    href="#contact"
+                    className={styles.navbar_link_active}
+                    onClick={() => {
+                      setActiveTab("contact");
+                    }}
+                >
+                  Contact
+                </Link>
+                :
+                <Link
+                    href="#contact"
+                    className={styles.navbar_link}
+                    onClick={() => {
+                      setActiveTab("contact");
+                    }}
+                >
+                  Contact
+                </Link>
+          }
         </nav>
       </div>
     </>

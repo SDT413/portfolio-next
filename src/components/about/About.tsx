@@ -4,10 +4,9 @@ import classNames from "classnames";
 import {useVisual} from "@/hooks/useVisual";
 import {useActions} from "@/hooks/useActions";
 import { setTimeout } from "timers";
+import {Observer} from "@/utils/observer";
 
 const About = () => {
-    const {setActiveTab} = useActions();
-    const cbRef = React.useRef<HTMLDivElement>(null);
     const [isBlinking, setIsBlinking] = useState<boolean>(false);
     const [isAnimated, setIsAnimated] = useState<boolean>(false);
 
@@ -25,28 +24,7 @@ const About = () => {
         setIsAnimated(false);
       }, 2000);
     };
-    React.useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setActiveTab('about');
-                    }
-                });
-            },
-            {
-                threshold: 0.5,
-            }
-        );
-        if (cbRef.current) {
-            observer.observe(cbRef.current);
-        }
-        return () => {
-            if (cbRef.current) {
-                observer.unobserve(cbRef.current);
-            }
-        };
-    }, [cbRef]);
+    const cbRef = Observer("about");
   return (
     <section className={styles.about} id="about">
       <h2 className={styles.heading}>

@@ -10,32 +10,10 @@ import TailwindSVG from "./assets/svgs/TailwindSVG";
 import SCSSSVG from "./assets/svgs/SCSSSVG";
 import NextJSSVG from "./assets/svgs/NextJSSVG";
 import TSSVG from "./assets/svgs/TSSVG";
+import {Observer} from "@/utils/observer";
 
 const HomeSection: FC = ({}) => {
-  const { setActiveTab } = useActions();
-  const cbRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveTab("home");
-          }
-        });
-      },
-      {
-        threshold: 0.5,
-      }
-    );
-    if (cbRef.current) {
-      observer.observe(cbRef.current);
-    }
-    return () => {
-      if (cbRef.current) {
-        observer.unobserve(cbRef.current);
-      }
-    };
-  }, [cbRef]);
+  const cbRef = Observer("home");
   return (
     <section className={styles.home} id={styles.home} ref={cbRef}>
       <div className={styles.home_content}>
