@@ -3,32 +3,10 @@ import styles from "./Contacts.module.css";
 import EnvelopeSVG from "./assets/EnvelopeSVG";
 import MapSVG from "./assets/MapSVG";
 import {useActions} from "@/hooks/useActions";
+import {Observer} from "@/utils/observer";
 
 const Contacts: FC = ({}) => {
-  const {setActiveTab} = useActions();
-  const cbRef = React.useRef<HTMLDivElement>(null);
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setActiveTab('contact');
-            }
-          });
-        },
-        {
-          threshold: 0.5,
-        }
-    );
-    if (cbRef.current) {
-      observer.observe(cbRef.current);
-    }
-    return () => {
-      if (cbRef.current) {
-        observer.unobserve(cbRef.current);
-      }
-    };
-  }, [cbRef]);
+  const cbRef = Observer("contact");
   return (
     <div className={styles.contacts} id="contact">
       <div className={styles.contacts_content}>
