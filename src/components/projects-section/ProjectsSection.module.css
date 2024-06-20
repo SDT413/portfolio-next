@@ -9,6 +9,9 @@
   align-items: center;
 
   background-color: #112e42;
+
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
 }
 
 .heading {

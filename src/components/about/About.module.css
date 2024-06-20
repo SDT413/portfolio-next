@@ -5,7 +5,9 @@
   flex-direction: column;
   gap: 2rem;
   background: var(--second-bg-color);
-  padding-bottom: 6rem;
+
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
 }
 
 .heading {
