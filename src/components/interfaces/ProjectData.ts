@@ -6,4 +6,5 @@ export interface ProjectData {
     technologies: string[];
     githubLink?: string;
     liveDemoLink?: string;
+    image: StaticImageData;
 }
