@@ -96,10 +96,17 @@
 }
 
 .project_link {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  transition: scale 0.3s ease;
+}
+
+.project_link:hover {
+  scale: 1.2;
 }
 
 .project_link_icon_svg {
@@ -108,21 +115,21 @@
   margin-left: 5px;
 }
 
-@media (max-width: 1280px){
-    .projects_container {
-      gap: 50px;
-    }
-   .project_container,
-   .project_container:nth-child(even) {
-      gap: 150px;
-    }
-   .project_img {
-      width: 400px;
-      height: 300px;
-    }
-   .project_info {
-      width: 350px;
-   }
+@media (max-width: 1280px) {
+  .projects_container {
+    gap: 50px;
+  }
+  .project_container,
+  .project_container:nth-child(even) {
+    gap: 150px;
+  }
+  .project_img {
+    width: 400px;
+    height: 300px;
+  }
+  .project_info {
+    width: 350px;
+  }
 }
 
 @media (max-width: 1024px) {

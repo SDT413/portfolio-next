@@ -3,7 +3,7 @@ import styles from "./Logo.module.css";
 
 const Logo = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <a href="#" className={styles.logo}>
         Kirill.
       </a>

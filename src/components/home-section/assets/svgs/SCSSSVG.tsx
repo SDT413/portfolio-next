@@ -11,7 +11,6 @@ function SCSSSVG({className}: Props) {
     viewBox="0 0 32 32"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <title>{"file_type_scss2"}</title>
     <path
       d="M16,2A14,14,0,1,1,2,16,14,14,0,0,1,16,2Z"
       style={{

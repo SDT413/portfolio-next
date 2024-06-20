@@ -11,7 +11,6 @@ function HTMLSVG({className}: Props) {
     viewBox="0 0 32 32"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <title>{"file_type_html"}</title>
     <polygon
       points="5.902 27.201 3.655 2 28.345 2 26.095 27.197 15.985 30 5.902 27.201"
       style={{
