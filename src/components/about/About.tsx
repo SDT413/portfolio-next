@@ -3,6 +3,7 @@ import styles from "./About.module.css";
 import classNames from "classnames";
 import {useVisual} from "@/hooks/useVisual";
 import {useActions} from "@/hooks/useActions";
+import { setTimeout } from "timers";
 
 const About = () => {
     const {setActiveTab} = useActions();
@@ -11,6 +12,9 @@ const About = () => {
 
     const toggleBlink = () => {
       setIsBlinking(!isBlinking);
+      setTimeout(() => {
+        setIsBlinking(false);
+      }, 1000);
     };
     React.useEffect(() => {
         const observer = new IntersectionObserver(
