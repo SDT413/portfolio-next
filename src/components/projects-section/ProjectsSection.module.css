@@ -51,6 +51,11 @@
   height: 350px;
 
   border-radius: 15px;
+  transition: transform .3s ease;
+}
+
+.project_img:hover{
+  transform: scale(1.1);
 }
 
 .project_info {

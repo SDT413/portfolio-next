@@ -4,23 +4,23 @@ import styles from "./ProjectsSection.module.css";
 import placeholder from "./assets/placeholder.jpg";
 import GitHubSVG from "./assets/GitHubSVG";
 import ArrowInSquareSVG from "./assets/ArrowInSquareSVG";
-import {useActions} from "@/hooks/useActions";
+import { useActions } from "@/hooks/useActions";
 
 function ProjectsSection() {
-  const {setActiveTab} = useActions();
+  const { setActiveTab } = useActions();
   const cbRef = React.useRef<HTMLDivElement>(null);
   React.useEffect(() => {
     const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setActiveTab('projects');
-            }
-          });
-        },
-        {
-          threshold: 0.5,
-        }
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveTab("projects");
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      }
     );
     if (cbRef.current) {
       observer.observe(cbRef.current);
@@ -41,11 +41,13 @@ function ProjectsSection() {
           </p>
         </div>
         <span className={styles.project_container}>
-          <Image
-            className={styles.project_img}
-            src={placeholder}
-            alt="Project placeholder"
-          />
+          <a href="#">
+            <Image
+              className={styles.project_img}
+              src={placeholder}
+              alt="Project placeholder"
+            />
+          </a>
           <div className={styles.project_info}>
             <h3 className={styles.project_title}>Project Title</h3>
             <p className={styles.project_description}>
@@ -75,11 +77,13 @@ function ProjectsSection() {
           </div>
         </span>
         <span className={styles.project_container}>
-          <Image
-            className={styles.project_img}
-            src={placeholder}
-            alt="Project placeholder"
-          />
+          <a href="#">
+            <Image
+              className={styles.project_img}
+              src={placeholder}
+              alt="Project placeholder"
+            />
+          </a>
           <div className={styles.project_info}>
             <h3 className={styles.project_title}>Project Title</h3>
             <p className={styles.project_description}>
@@ -109,11 +113,13 @@ function ProjectsSection() {
           </div>
         </span>
         <span className={styles.project_container}>
-          <Image
-            className={styles.project_img}
-            src={placeholder}
-            alt="Project placeholder"
-          />
+          <a href="#">
+            <Image
+              className={styles.project_img}
+              src={placeholder}
+              alt="Project placeholder"
+            />
+          </a>
           <div className={styles.project_info}>
             <h3 className={styles.project_title}>Project Title</h3>
             <p className={styles.project_description}>
@@ -143,11 +149,13 @@ function ProjectsSection() {
           </div>
         </span>
         <span className={styles.project_container}>
-          <Image
-            className={styles.project_img}
-            src={placeholder}
-            alt="Project placeholder"
-          />
+          <a href="#">
+            <Image
+              className={styles.project_img}
+              src={placeholder}
+              alt="Project placeholder"
+            />
+          </a>
           <div className={styles.project_info}>
             <h3 className={styles.project_title}>Project Title</h3>
             <p className={styles.project_description}>
