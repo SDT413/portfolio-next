@@ -21,7 +21,7 @@ const HomeSection: FC = ({}) => {
           Hi, I am <span>Kirill Marchenko</span>
         </h1>
         <div className={styles.text_animate}>
-          <h3 className={styles.header3}>Backend Developer</h3>
+          <h3 className={styles.header3}>Fullstack Developer</h3>
         </div>
         <p className={styles.paragraph}>
           I am a student at the University of Prague(PCU). I have 1 year

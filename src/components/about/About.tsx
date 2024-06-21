@@ -38,7 +38,7 @@ const About = () => {
       </div>
 
       <div className={styles.about_content}>
-        <h3 className={styles.header3}>Backend Developer</h3>
+        <h3 className={styles.header3}>Fullstack Developer</h3>
         <p className={styles.paragraph}>
           I am a student at the University of Prague(PCU). I have 1 year
           experience with react, wordpress and node.js.
