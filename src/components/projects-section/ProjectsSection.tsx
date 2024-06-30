@@ -19,27 +19,25 @@ function ProjectsSection() {
   const projects: ProjectData[] = [
     {
       title: "The FBA machine",
-      description: "",
-      technologies: ["React", "CSS", "Node"],
+      description: "Code link does not work, for security reasons.",
+      technologies: [
+        "React js",
+        "Wordpress",
+        "Node.js",
+        "Express",
+        "Sequlize",
+        "MySQL",
+        "Stripe",
+        "Emailer",
+        "Twilio",
+          "Ubuntu",
+            "Nginx",
+          "TypeScript",
+          "File System",
+      ],
       githubLink: "#projects",
       liveDemoLink: "https://thefbamachine.co/",
       image: the_fba_machine,
-    },
-    {
-      title: "Kids cookies",
-      description: "",
-      technologies: ["React js", "CSS", "Node js"],
-      githubLink: "#",
-      liveDemoLink: "#",
-      image: kids_cookies,
-    },
-    {
-      title: "Coffee shop",
-      description: "",
-      technologies: ["React", "CSS"],
-      githubLink: "#",
-      liveDemoLink: "#",
-      image: coffee_shop,
     },
     {
       title: "Spotify clone",
@@ -47,7 +45,7 @@ function ProjectsSection() {
         "This project demonstrates the design and implementation of a music streaming application's user interface, inspired by popular platforms like Spotify. The focus was on creating a clean, intuitive and visually appealing interface.",
       technologies: ["Next js", " Tailwind CSS", "Supabase"],
       githubLink: "#",
-      liveDemoLink: "#",
+      liveDemoLink: "https://sdt413.github.io/SpotifyClone/",
       image: spotify_clone,
     },
     {
@@ -58,9 +56,17 @@ function ProjectsSection() {
         "Shop follows the classic single application structure. Has implemented backend part\n" +
         "on Spring with postgreSql database. Custom written Rest API, services and\n" +
         "repositories.\n",
-      technologies: [],
+      technologies: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Redux Toolkit",
+        "Tailwind CSS",
+        "Spring",
+        "PostgreSQL",
+      ],
       githubLink: "#",
-      liveDemoLink: "#",
+      liveDemoLink: "https://sdt413.github.io/CoffeeShop/",
       image: coffee_shop,
     },
     {
@@ -73,9 +79,16 @@ function ProjectsSection() {
         "player’s search, they will be assisted by the helper function, which allows the player\n" +
         "to narrow the scope of the search on the map to a certain circle while sacrificing part\n" +
         "of the time to solve the problem.\n",
-      technologies: [],
+      technologies: [
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Redux Toolkit",
+            "Tailwind CSS",
+            "Mapbox",
+      ],
       githubLink: "#",
-      liveDemoLink: "#",
+      liveDemoLink: "https://sdt413.github.io/GeographyMinigames/",
       image: geography_minigames,
     },
     {
@@ -90,7 +103,11 @@ function ProjectsSection() {
           "You’ll have to cook a range of different dishes and work together in order to become the most effective and ultimate team!" +
           "The game uses netcode for game objects for multiplayer, Lobby and Relay services, and Unity Server. \n",
       technologies: [
-
+        "Unity",
+        "C#",
+        "Netcode",
+        "Lobby and Relay services",
+        "Unity Server",
       ],
       githubLink: "#",
       liveDemoLink: "#",
