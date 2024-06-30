@@ -28,7 +28,7 @@ function ProjectsSection() {
     {
       title: "Kids cookies",
       description: "",
-      technologies: ["React", "CSS", "Node"],
+      technologies: ["React js", "CSS", "Node js"],
       githubLink: "#",
       liveDemoLink: "#",
       image: kids_cookies,
