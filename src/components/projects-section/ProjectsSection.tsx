@@ -19,19 +19,11 @@ function ProjectsSection() {
   const projects: ProjectData[] = [
     {
       title: "The FBA machine",
-      description: "",
-      technologies: ["React", "CSS", "Node"],
+      description: "The FBA Machine is a web portal that helps clients create and maintain their Amazon shops to earn money. The portal also allows for managing information about products, orders, and clients.",
+      technologies: ["React js", "CSS", "Node js"],
       githubLink: "#projects",
       liveDemoLink: "https://thefbamachine.co/",
       image: the_fba_machine,
-    },
-    {
-      title: "Kids cookies",
-      description: "",
-      technologies: ["React js", "CSS", "Node js"],
-      githubLink: "#",
-      liveDemoLink: "#",
-      image: kids_cookies,
     },
     {
       title: "Coffee shop",
