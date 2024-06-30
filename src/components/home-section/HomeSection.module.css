@@ -201,6 +201,9 @@
   height: 35px;
 }
 
+
+
+
 @media (max-width: 1920px) {
   .home_content {
     grid-area: content;
