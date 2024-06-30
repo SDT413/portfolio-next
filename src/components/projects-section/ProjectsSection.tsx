@@ -1,6 +1,8 @@
 import React from "react";
-import Image from "next/image";
 import styles from "./ProjectsSection.module.css";
+
+import geography_minigames from "../../../public/assets/images/geography_minigames.png";
+import kitchen_chaos from "../../../public/assets/images/kitchen_chaos.png";
 import placeholder from "/public/assets/images/placeholder.jpg";
 
 import kids_cookies from "/public/assets/images/kids-cookies.png";
@@ -8,10 +10,7 @@ import the_fba_machine from "/public/assets/images/thefbamachine.png";
 import coffee_shop from "/public/assets/images/coffee_shop.png";
 import spotify_clone from "/public/assets/images/spotify-clone.png";
 
-import GitHubSVG from "./assets/GitHubSVG";
-import ArrowInSquareSVG from "./assets/ArrowInSquareSVG";
 import { Observer } from "@/utils/observer";
-import Link from "next/link";
 import { ProjectData } from "@/components/interfaces/ProjectData";
 import ProjectElement from "./project-element/ProjectElement";
 
@@ -62,7 +61,7 @@ function ProjectsSection() {
       technologies: [],
       githubLink: "#",
       liveDemoLink: "#",
-      image: placeholder,
+      image: coffee_shop,
     },
     {
       title: "GeographyMinigames",
@@ -77,16 +76,27 @@ function ProjectsSection() {
       technologies: [],
       githubLink: "#",
       liveDemoLink: "#",
-      image: placeholder,
+      image: geography_minigames,
     },
     {
       title: "Kitchen_Chaos",
       description:
+          "Kitchen Chaos is a chaotic couch co-op cooking game for one to four players. " +
+          "Working as a team, you and your fellow chefs must prepare, cook and serve up a variety of tasty orders before the baying customers storm out in a huff." +
+          "Sharpen your knives and dust off your chef’s whites, there isn’t mushroom for error and the steaks are high in these crazy kitchens!" +
+          "The Burger Kingdom is in danger and only the finest cooking can save it! " +
+          "In Kitchen Chaos players must journey through a variety of cruel and unusual kitchens on their quest to become master chefs capable of conquering an ancient edible evil which plagues the land." +
+          "Play solo or engage in classic, chaotic couch co-op for up to four players in both co-operative and competitive challenge modes. " +
+          "You’ll have to cook a range of different dishes and work together in order to become the most effective and ultimate team!" +
+          "The game uses netcode for game objects for multiplayer, Lobby and Relay services, and Unity Server. \n",
+      technologies: [
+
+      ],
         "Massive Overcooked like game, the description for it would be: “Kitchen Chaos is a chaotic couch co-op cooking game for one to four players. Working as a team, you and your fellow chefs must prepare, cook and serve up a variety of tasty orders before the baying customers storm out in a huff. Sharpen your knives and dust off your chef’s whites, there isn’t mushroom for error and the steaks are high in these crazy kitchens!  The Burger Kingdom is in danger and only the finest cooking can save it! In Kitchen   Chaos  players must journey through a variety of cruel and unusual kitchens on their quest to become master chefs capable of conquering an ancient edible evil which plagues the land.Play solo or engage in classic, chaotic couch co-op for up to four players in both co-operative and competitive challenge modes. You’ll have to cook a range of different dishes and work together in order to become the most effective and ultimate team!”.The game uses netcode for game objects for multiplayer, Lobby and Relay services, and Unity Server. \n",
       technologies: [],
       githubLink: "#",
       liveDemoLink: "#",
-      image: placeholder,
+      image: kitchen_chaos,
     },
   ];
   return (
