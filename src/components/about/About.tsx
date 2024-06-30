@@ -1,15 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./About.module.css";
 import classNames from "classnames";
 import {useVisual} from "@/hooks/useVisual";
 import {useActions} from "@/hooks/useActions";
 import { setTimeout } from "timers";
 import {Observer} from "@/utils/observer";
+import ResumeReaderPopUp from "./resume-reader-pop-up/ResumeReaderPopUp";
 
 const About = () => {
     const [isBlinking, setIsBlinking] = useState<boolean>(false);
     const [isAnimated, setIsAnimated] = useState<boolean>(false);
 
+    const [isReading, setIsReading] = useState<boolean>(false);
+
+
+    useEffect(() => {
+      const body = document.getElementsByTagName("html")[0];
+      if (isReading) {
+          body.style.overflow = "hidden";
+      } else {
+          body.style.overflow = "auto";
+      }
+  
+      return () => {
+          body.style.overflow = "auto";
+      };
+  }, [isReading]);
+    
     const toggleBlink = () => {
       if(isAnimated){
         return;
@@ -44,11 +61,12 @@ const About = () => {
           experience with react, wordpress and node.js.
         </p>
         <div className={classNames(styles.btn_box, styles.btns)}  ref={cbRef}>
-          <a href="#" className={styles.btn} >
+          <button onClick={() => setIsReading(true)} className={styles.btn} >
             Read More
-          </a>
+          </button>
         </div>
       </div>
+      {isReading && <ResumeReaderPopUp onClose={() => setIsReading(false)} />}
     </section>
   );
 };
