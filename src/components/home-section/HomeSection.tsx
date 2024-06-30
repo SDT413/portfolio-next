@@ -100,18 +100,21 @@ const HomeSection: FC = ({}) => {
           </span>
         </div>
       </div>
-      <div className={styles.home_sci}>
-        <a href="#" className={styles.sci_link}>
-          <i className="bx bxl-facebook"></i>
-        </a>
-        <a href="#" className={styles.sci_link}>
-          <i className="bx bxl-twitter"></i>
-        </a>
-        <a href="#" className={styles.sci_link}>
-          <i className="bx bxl-linkedin"></i>
-        </a>
-      </div>
-    </section>
+        <div className={styles.home_sci}>
+          <a href="https://wa.me/380983645564" className={styles.sci_link}>
+            <i className="bx bxl-whatsapp"></i>
+          </a>
+          <a href="https://t.me/D_K413" className={styles.sci_link}>
+            <i className="bx bxl-telegram"></i>
+          </a>
+          <a href="https://github.com/SDT413" className={styles.sci_link}>
+            <i className="bx bxl-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/kirill-marchenko-8a3651311/" className={styles.sci_link}>
+            <i className="bx bxl-linkedin"></i>
+          </a>
+        </div>
+      </section>
   );
 };
 
