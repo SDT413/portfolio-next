@@ -19,15 +19,14 @@ const ProjectElement: FC<Props> = ({project}) => {
         />
       </a>
       <div className={styles.project_info}>
-        <h3 className={styles.project_title}>Project Title</h3>
+        <h3 className={styles.project_title}>{project.title}</h3>
         <p className={styles.project_description}>
-          Project description Project descriptionProject descriptionProject
-          descriptionProject descriptionProject descriptionProject
-          descriptionProject descriptionProject descriptionProject description
+          {project.description}
         </p>
         <span className={styles.project_technologies}>
-          <h3>React</h3>
-          <h3>CSS</h3>
+          {project.technologies.map((technology: string) => (
+            <h3 key={technology}>{technology}</h3>
+          ))}
         </span>
         <span className={styles.project_links}>
           <div className={styles.project_link}>

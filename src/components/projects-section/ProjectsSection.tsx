@@ -2,6 +2,12 @@ import React from "react";
 import Image from "next/image";
 import styles from "./ProjectsSection.module.css";
 import placeholder from "./assets/placeholder.jpg";
+
+import kids_cookies from "./assets/kids-cookies.png";
+import the_fba_machine from "./assets/thefbamachine.png";
+import coffee_shop from "./assets/coffee_shop.png";
+import spotify_clone from "./assets/spotify-clone.png";
+
 import GitHubSVG from "./assets/GitHubSVG";
 import ArrowInSquareSVG from "./assets/ArrowInSquareSVG";
 import { Observer } from "@/utils/observer";
@@ -13,40 +19,40 @@ function ProjectsSection() {
   const cbRef = Observer("projects");
   const projects: ProjectData[] = [
     {
-      title: "Project Title",
+      title: "The FBA machine",
       description:
-        "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
+        "",
       technologies: ["React", "CSS"],
       githubLink: "#",
       liveDemoLink: "#",
-      image: placeholder,
+      image: the_fba_machine,
     },
     {
-      title: "Project Title",
+      title: "Kids cookies",
       description:
-        "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
+        "",
       technologies: ["React", "CSS"],
       githubLink: "#",
       liveDemoLink: "#",
-      image: placeholder,
+      image: kids_cookies,
     },
     {
-      title: "Project Title",
+      title: "Coffee shop",
       description:
-        "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
+        "",
       technologies: ["React", "CSS"],
       githubLink: "#",
       liveDemoLink: "#",
-      image: placeholder,
+      image: coffee_shop,
     },
     {
-      title: "Project Title",
+      title: "Spotify clone",
       description:
-        "Project description Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description",
-      technologies: ["React", "CSS"],
+        "Clone of spotify create in order to show my ability to work with next js, tailwind CSS and supabase",
+      technologies: ["Next js", " Tailwind CSS", "Supabase"],
       githubLink: "#",
       liveDemoLink: "#",
-      image: placeholder,
+      image: spotify_clone,
     },
   ];
   return (
