@@ -59,7 +59,7 @@ function ProjectsSection() {
       image: coffee_shop,
     },
     {
-      title: "GeographyMinigames",
+      title: "Geography Minigames",
       description:
           "Is a game about solving problems on the map with limited\n" +
           "time, offering the player the opportunity to try four game modes that provide\n" +
@@ -76,7 +76,7 @@ function ProjectsSection() {
       image: geography_minigames,
     },
     {
-      title: "Kitchen_Chaos",
+      title: "Kitchen Chaos",
       description:
           "Kitchen Chaos is a chaotic couch co-op cooking game for one to four players. " +
           "Working as a team, you and your fellow chefs must prepare, cook and serve up a variety of tasty orders before the baying customers storm out in a huff." +
