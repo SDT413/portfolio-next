@@ -21,8 +21,8 @@ function ProjectsSection() {
       title: "The FBA machine",
       description: "",
       technologies: ["React", "CSS", "Node"],
-      githubLink: "#",
-      liveDemoLink: "#",
+      githubLink: "#projects",
+      liveDemoLink: "https://thefbamachine.co/",
       image: the_fba_machine,
     },
     {
