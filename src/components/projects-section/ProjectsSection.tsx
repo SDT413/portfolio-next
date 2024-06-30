@@ -48,6 +48,50 @@ function ProjectsSection() {
       liveDemoLink: "#",
       image: placeholder,
     },
+    {
+      title: "Coffee Shop",
+      description:
+          "Responsive coffee shop for training of commercial development with\n" +
+          "React typescript, Redux Toolkit and Next.js. With Routes, React and custom hooks.\n" +
+          "Shop follows the classic single application structure. Has implemented backend part\n" +
+          "on Spring with postgreSql database. Custom written Rest API, services and\n" +
+          "repositories.\n",
+      technologies: [
+
+      ],
+      githubLink: "#",
+      liveDemoLink: "#",
+      image: placeholder,
+    },
+    {
+      title: "GeographyMinigames",
+      description:
+          "Is a game about solving problems on the map with limited\n" +
+          "time, offering the player the opportunity to try four game modes that provide\n" +
+          "different interactions with the map. The essence in all modes is the same: answer the\n" +
+          "question/search goal by selecting the corresponding object on the map. In the\n" +
+          "player’s search, they will be assisted by the helper function, which allows the player\n" +
+          "to narrow the scope of the search on the map to a certain circle while sacrificing part\n" +
+          "of the time to solve the problem.\n",
+      technologies: [
+
+      ],
+      githubLink: "#",
+      liveDemoLink: "#",
+      image: placeholder,
+    },
+    {
+      title: "Kitchen_Chaos",
+      description:
+          "" +
+          "",
+      technologies: [
+
+      ],
+      githubLink: "#",
+      liveDemoLink: "#",
+      image: placeholder,
+    },
   ];
   return (
     <div className={styles.projects} id="projects" ref={cbRef}>
