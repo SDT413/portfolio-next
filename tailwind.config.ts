@@ -85,9 +85,9 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
             "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        'background': "url('/assets/images/images.png')",
-        'image-eye': "url('/assets/images/home_photo.jpg')",
-        'image-home': "url('/assets/images/home_photo.jpg')",
+        'background': process.env.NODE_ENV === 'production' ? "url('/portfolio-next/assets/images/images.png')" : "url('/assets/images/images.png')",
+        'image-eye': process.env.NODE_ENV === 'production' ? "url('/portfolio-next/assets/images/home_photo.jpg')" : "url('/assets/images/home_photo.jpg')",
+        'image-home': process.env.NODE_ENV === 'production' ? "url('/portfolio-next/assets/images/home_photo.jpg')" : "url('/assets/images/home_photo.jpg')",
       },
     },
   },
