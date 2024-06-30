@@ -20,7 +20,7 @@ function ProjectsSection() {
     {
       title: "The FBA machine",
       description: "",
-      technologies: ["React", "CSS", "Node"],
+      technologies: ["React js", "CSS", "Node js"],
       githubLink: "#",
       liveDemoLink: "#",
       image: the_fba_machine,
@@ -28,7 +28,7 @@ function ProjectsSection() {
     {
       title: "Kids cookies",
       description: "",
-      technologies: ["React", "CSS", "Node"],
+      technologies: ["React js", "CSS", "Node js"],
       githubLink: "#",
       liveDemoLink: "#",
       image: kids_cookies,
