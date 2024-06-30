@@ -34,12 +34,6 @@ const ContactForm:FC<ContactFormProps> = ({setShowHireForm}) => {
             <div className={styles.form_footer}>
                 <div className={styles.form_buttons}>
                     <button className={styles.form_button} onClick={(event) => {
-
-                        event.preventDefault();
-                    }}
-                    >Send
-                    </button>
-                    <button className={styles.form_button} onClick={(event) => {
                         event.preventDefault();
                         setShowHireForm(false)
                     }}>Close
