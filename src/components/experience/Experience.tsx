@@ -10,15 +10,21 @@ const Experience = () => {
         {
             date: "2022 - Present",
             heading: "Computer & Science - Prague City University",
-            description: "Ongoing Bachelor's degree in Computer Science"
+            description: "Third year student at the University of Prague. Studying computer science and software engineering."
         }
     ]
     const experienceData = [
         {
-            date: "2023 - Present",
-            heading: "Full-Stack - Wraith.co",
-            description: "Ongoing Full-Stack Developer"
+            date: "December 2022 - June 2023",
+            heading: " Freelance Application Developer - Ukraine",
+            description: "Developed various applications for clients. Worked on projects ranging from small websites to large-scale applications."
+        },
+        {
+            date: "September 2023 - Present",
+            heading: "Full-Stack Developer at Daily Distro LLC - USA",
+            description: "Developed and maintained the company's website and mobile application. Implemented new features and fixed bugs. Worked with a team of developers to create a new version of the website and mobile application."
         }
+
     ]
 
     return (
