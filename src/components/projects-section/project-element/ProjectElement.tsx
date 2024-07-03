@@ -42,6 +42,7 @@ const ProjectElement: FC<Props> = ({project}) => {
             </span>
           </div>
             )}
+            {project.liveDemoLink!.length > 0 && (
           <div className={styles.project_link}>
             <Link className={styles.project_link_address} href={project.liveDemoLink as string}>
                 Live Demo
@@ -50,6 +51,7 @@ const ProjectElement: FC<Props> = ({project}) => {
               <ArrowInSquareSVG className={styles.project_link_icon_svg} />
             </span>
           </div>
+            )}
         </span>
       </div>
     </span>

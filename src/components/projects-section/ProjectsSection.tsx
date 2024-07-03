@@ -66,7 +66,7 @@ function ProjectsSection() {
         "PostgreSQL",
       ],
       githubLink: "https://github.com/SDT413/coffee-shop",
-      liveDemoLink: "https://sdt413.github.io/CoffeeShop/",
+      liveDemoLink: "",
       image: coffee_shop,
     },
     {
