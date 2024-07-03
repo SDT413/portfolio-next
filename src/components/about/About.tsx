@@ -68,11 +68,11 @@ const About = () => {
               </button>
                   </span>
               <span className={styles.mobile_link}>
-                  <a href={path_to_pdf} target="_blank" download={path_to_pdf}>
+                  <Link href={path_to_pdf} target="_blank" download={path_to_pdf}>
               <button className={styles.btn}>
                   Read More
               </button>
-                    </a>
+                    </Link>
               </span>
           </div>
       </div>

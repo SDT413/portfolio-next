@@ -110,7 +110,8 @@ function ProjectsSection() {
         "Unity Server",
       ],
       githubLink: "https://github.com/SDT413/Kitchen_Chaos",
-      liveDemoLink: "#",
+      liveDemoLink: "",
+      downloadLink: "https://drive.google.com/file/d/1seJrUbV3EQSOwhf52srCNkpx9ceItP5V/view?usp=drive_link",
       image: kitchen_chaos,
     },
   ];

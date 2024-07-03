@@ -12,13 +12,27 @@ type Props = {
 const ProjectElement: FC<Props> = ({project}) => {
   return (
     <span className={styles.project_container}>
-      <Link href={project.liveDemoLink as string}>
+        {project.liveDemoLink! && project.liveDemoLink!.length > 0 ? (
+      <Link href={ project.liveDemoLink as string}>
         <Image
           className={styles.project_img}
           src={project.image}
           alt="Project placeholder"
         />
       </Link>
+        ) : (
+            project.downloadLink! && project.downloadLink!.length > 0 ? (
+                <Link href={ project.downloadLink as string} target={"_blank"} download>
+            <Image
+                className={styles.project_img}
+                src={project.image}
+                alt="Project placeholder"
+            />
+        </Link>
+            ) : (
+        <Image className={styles.project_img} src={project.image} alt="Project placeholder" />
+            )
+        )}
       <div className={styles.project_info}>
         <h3 className={styles.project_title}>{project.title}</h3>
         <p className={styles.project_description}>
@@ -32,7 +46,7 @@ const ProjectElement: FC<Props> = ({project}) => {
             ))}
         </span>
         <span className={styles.project_links}>
-            {project.githubLink!.length > 0 && (
+            {project.githubLink && project.githubLink!.length > 0 && (
           <div className={styles.project_link}>
             <Link className={styles.project_link_address} href={project.githubLink as string}>
                 GitHub
@@ -42,7 +56,7 @@ const ProjectElement: FC<Props> = ({project}) => {
             </span>
           </div>
             )}
-            {project.liveDemoLink!.length > 0 && (
+            {project.liveDemoLink && project.liveDemoLink!.length > 0 && (
           <div className={styles.project_link}>
             <Link className={styles.project_link_address} href={project.liveDemoLink as string}>
                 Live Demo
@@ -51,6 +65,16 @@ const ProjectElement: FC<Props> = ({project}) => {
               <ArrowInSquareSVG className={styles.project_link_icon_svg} />
             </span>
           </div>
+            )}
+            {project.downloadLink && project.downloadLink!.length > 0 && (
+            <div className={styles.project_link}>
+                <Link className={styles.project_link_address} href={project.downloadLink as string} target={"_blank"} download>
+                    Download
+                </Link>
+                <span className={styles.project_link_icon}>
+              <ArrowInSquareSVG className={styles.project_link_icon_svg} />
+            </span>
+            </div>
             )}
         </span>
       </div>
