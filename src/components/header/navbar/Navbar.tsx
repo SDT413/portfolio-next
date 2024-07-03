@@ -164,6 +164,7 @@ const Navbar = () => {
                     className={styles.navbar_link_active}
                     onClick={() => {
                       setActiveTab("home");
+                      toggleExpansion();
                     }}
                 >
                   Home
@@ -174,6 +175,7 @@ const Navbar = () => {
                     className={styles.navbar_link}
                     onClick={() => {
                       setActiveTab("home");
+                        toggleExpansion();
                     }}
                 >
                   Home
@@ -186,6 +188,7 @@ const Navbar = () => {
                     className={styles.navbar_link_active}
                     onClick={() => {
                       setActiveTab("about");
+                        toggleExpansion();
                     }}
                 >
                   About
@@ -196,6 +199,7 @@ const Navbar = () => {
                     className={styles.navbar_link}
                     onClick={() => {
                       setActiveTab("about");
+                        toggleExpansion();
                     }}
                 >
                   About
@@ -208,6 +212,7 @@ const Navbar = () => {
                     className={styles.navbar_link_active}
                     onClick={() => {
                       setActiveTab("experience");
+                        toggleExpansion();
                     }}
                 >
                   Experience
@@ -218,6 +223,7 @@ const Navbar = () => {
                     className={styles.navbar_link}
                     onClick={() => {
                       setActiveTab("experience");
+                        toggleExpansion();
                     }}
                 >
                   Experience
@@ -230,6 +236,7 @@ const Navbar = () => {
                     className={styles.navbar_link_active}
                     onClick={() => {
                       setActiveTab("projects");
+                        toggleExpansion();
                     }}
                 >
                   Projects
@@ -240,6 +247,7 @@ const Navbar = () => {
                     className={styles.navbar_link}
                     onClick={() => {
                       setActiveTab("projects");
+                        toggleExpansion();
                     }}
                 >
                   Projects
@@ -252,6 +260,7 @@ const Navbar = () => {
                     className={styles.navbar_link_active}
                     onClick={() => {
                       setActiveTab("contact");
+                        toggleExpansion();
                     }}
                 >
                   Contact
@@ -262,6 +271,7 @@ const Navbar = () => {
                     className={styles.navbar_link}
                     onClick={() => {
                       setActiveTab("contact");
+                        toggleExpansion();
                     }}
                 >
                   Contact
