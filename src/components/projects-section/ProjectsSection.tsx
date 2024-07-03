@@ -45,7 +45,7 @@ function ProjectsSection() {
         "This project demonstrates the design and implementation of a music streaming application's user interface, inspired by popular platforms like Spotify. The focus was on creating a clean, intuitive and visually appealing interface.",
       technologies: ["Next js", " Tailwind CSS", "Supabase"],
       githubLink: "https://github.com/SDT413/spotify-clone",
-      liveDemoLink: "https://sdt413.github.io/SpotifyClone/",
+      liveDemoLink: "https://spotify-clone413.vercel.app/",
       image: spotify_clone,
     },
     {

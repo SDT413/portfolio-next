@@ -1,12 +1,13 @@
 import { FC } from "react";
 import styles from "./ResumeReaderPopUp.module.css";
+import Link from "next/link";
 
 interface ResumeReaderPopUpProps {
   onClose: () => void;
 }
 
 const ResumeReaderPopUp: FC<ResumeReaderPopUpProps> = ({ onClose }) => {
-  
+  const path_to_pdf = process.env.NODE_ENV === 'production' ? "/portfolio-next/assets/documents/fullstack.pdf" : "/assets/documents/fullstack.pdf";
   return (
     <div className={styles.overlay}>
       <div className={styles.container}>
@@ -35,10 +36,10 @@ const ResumeReaderPopUp: FC<ResumeReaderPopUpProps> = ({ onClose }) => {
         </span>
         <iframe
           className="rounded-[10px] h-full w-full"
-          src="/assets/documents/fullstack.pdf"
+          src={path_to_pdf}
         >
           <p className="text-black">
-            Unable to display PDF file. <a href="sample.pdf">Download</a>{" "}
+            Unable to display PDF file. <Link href={path_to_pdf}>Download</Link> it
             instead.
           </p>
         </iframe>
