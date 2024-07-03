@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
+    output: process.env.NODE_ENV === 'production' ? "export" : "server",
     images: {
-        loader: "custom",
-        loaderFile: './ImageLoader.ts'
+        loader: process.env.NODE_ENV === 'production' ? "custom" : "default",
+        loaderFile: process.env.NODE_ENV === 'production' ? './ImageLoader.ts' : undefined,
     },
 };
 

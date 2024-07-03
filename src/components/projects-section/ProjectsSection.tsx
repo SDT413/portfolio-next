@@ -35,7 +35,7 @@ function ProjectsSection() {
           "TypeScript",
           "File System",
       ],
-      githubLink: "#projects",
+      githubLink: "",
       liveDemoLink: "https://thefbamachine.co/",
       image: the_fba_machine,
     },

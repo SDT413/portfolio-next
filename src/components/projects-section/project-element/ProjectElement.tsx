@@ -32,6 +32,7 @@ const ProjectElement: FC<Props> = ({project}) => {
             ))}
         </span>
         <span className={styles.project_links}>
+            {project.githubLink!.length > 0 && (
           <div className={styles.project_link}>
             <Link className={styles.project_link_address} href={project.githubLink as string}>
                 GitHub
@@ -40,6 +41,7 @@ const ProjectElement: FC<Props> = ({project}) => {
               <GitHubSVG className={styles.project_link_icon_svg} />
             </span>
           </div>
+            )}
           <div className={styles.project_link}>
             <Link className={styles.project_link_address} href={project.liveDemoLink as string}>
                 Live Demo
