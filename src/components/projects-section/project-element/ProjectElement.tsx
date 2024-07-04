@@ -5,13 +5,15 @@ import { ProjectData } from "@/components/interfaces/ProjectData";
 import ArrowInSquareSVG from "../assets/ArrowInSquareSVG";
 import GitHubSVG from "../assets/GitHubSVG";
 import Link from "next/link";
+import {Observer} from "@/utils/observer";
 
 type Props = {
     project: ProjectData;
 }
 const ProjectElement: FC<Props> = ({project}) => {
+    const cbRef = Observer("projects");
   return (
-    <span className={styles.project_container}>
+    <span className={styles.project_container} id="projects" ref={cbRef}>
         {project.liveDemoLink! && project.liveDemoLink!.length > 0 ? (
       <Link href={ project.liveDemoLink as string}>
         <Image

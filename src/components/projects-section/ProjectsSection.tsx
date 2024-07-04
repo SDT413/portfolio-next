@@ -15,7 +15,6 @@ import { ProjectData } from "@/components/interfaces/ProjectData";
 import ProjectElement from "./project-element/ProjectElement";
 
 function ProjectsSection() {
-  const cbRef = Observer("projects");
   const projects: ProjectData[] = [
     {
       title: "The FBA machine",
@@ -116,7 +115,7 @@ function ProjectsSection() {
     },
   ];
   return (
-    <div className={styles.projects} id="projects" ref={cbRef}>
+    <div className={styles.projects}>
       <div className={styles.projects_container}>
         <div className={styles.heading}>
           <h2 className={styles.header}>Projects</h2>
