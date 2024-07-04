@@ -40,7 +40,7 @@
 
 .contact_info_wrapper {
   display: grid;
-  grid-template-areas: "icon icon contact_header" "icon icon paragraph";
+  grid-template-areas: "icon icon contact_header" "icon icon paragraph" "icon icon add_contact_paragraph";
   justify-items: start;
   align-items: center;
 
@@ -58,6 +58,12 @@
   height: 40px;
 }
 
+.contact_icon_white {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+}
+
 .contact_header {
   grid-area: contact_header;
   font: 700 18px/21px Poppins;
@@ -69,9 +75,25 @@
   font: 500 15px/18px Poppins;
   color: #fff;
 }
+.add_contact_paragraph {
+  grid-area: add_contact_paragraph;
+  font: 500 15px/18px Poppins;
+  color: #fff;
+  margin-top: 10px;
+  padding-left: 40px;
+  transform: translateX(-40px);
+}
+
+@media (max-width: 1400px) {
+  .contacts_content {
+    left: -200px;
+  }
+
+}
+
 @media (max-width: 1280px) {
   .contacts_content {
-    left: -185px;
+    left: -100px;
   }
 }
 
@@ -81,7 +103,7 @@
     left: 0;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .contact_info {
     flex-direction: column;
   }
