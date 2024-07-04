@@ -116,6 +116,7 @@
 
   .add_contact_paragraph {
     padding-left: 0;
-    transform: translateX(0);
+    transform: translateX(3px);
+    margin-top: 0;
   }
 }
