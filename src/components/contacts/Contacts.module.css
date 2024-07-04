@@ -79,7 +79,7 @@
   grid-area: add_contact_paragraph;
   font: 500 15px/18px Poppins;
   color: #fff;
-  margin-top: 10px;
+  margin-top: 3px;
   padding-left: 40px;
   transform: translateX(-40px);
 }
@@ -93,7 +93,7 @@
 
 @media (max-width: 1280px) {
   .contacts_content {
-    left: -75px;
+    left: -50px;
   }
 }
 
