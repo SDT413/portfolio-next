@@ -20,6 +20,7 @@ import JavaSpringSVG from "./assets/svgs/JavaSpringSVG";
 import PopupModal from "@/components/home-section/popup-form/PopupModal";
 import ContactForm from "@/components/home-section/popup-form/contact-form/ContactForm";
 import HireForm from "@/components/home-section/popup-form/hire-form/HireForm";
+import Link from "next/link";
 
 const HomeSection: FC = ({}) => {
   const cbRef = Observer("home");
@@ -101,18 +102,18 @@ const HomeSection: FC = ({}) => {
         </div>
       </div>
         <div className={styles.home_sci}>
-          <a href="https://wa.me/380983645564" className={styles.sci_link}>
+          <Link href="https://wa.me/380983645564" className={styles.sci_link}>
             <i className="bx bxl-whatsapp"></i>
-          </a>
-          <a href="https://t.me/D_K413" className={styles.sci_link}>
+          </Link>
+          <Link href="https://t.me/D_K413" className={styles.sci_link}>
             <i className="bx bxl-telegram"></i>
-          </a>
-          <a href="https://github.com/SDT413" className={styles.sci_link}>
+          </Link>
+          <Link href="https://github.com/SDT413" className={styles.sci_link}>
             <i className="bx bxl-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/kirill-marchenko-8a3651311/" className={styles.sci_link}>
+          </Link>
+          <Link href="https://www.linkedin.com/in/kirill-marchenko-8a3651311/" className={styles.sci_link}>
             <i className="bx bxl-linkedin"></i>
-          </a>
+          </Link>
         </div>
       </section>
   );

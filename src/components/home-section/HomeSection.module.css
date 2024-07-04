@@ -266,7 +266,7 @@
   .home_sci {
     grid-area: sci;
     bottom: 4rem;
-    width: 170px;
+    width: 220px;
     position: relative;
     display: flex;
     justify-content: space-between;
