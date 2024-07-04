@@ -30,7 +30,7 @@ const Contacts: FC = ({}) => {
               <EnvelopeSVG className={styles.contact_icon}/>
             </span>
             <h3 className={styles.contact_header}>Mail</h3>
-            <p className={styles.contact_paragraph}>kiril309274@gmail.com</p>
+            <p className={styles.contact_paragraph}>kirillmarchenko413@gmail.com</p>
           </div>
           <div className={styles.contact_info_wrapper}>
             <span className={styles.contact_icon_wrapper}>

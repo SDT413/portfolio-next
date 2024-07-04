@@ -86,14 +86,14 @@
 
 @media (max-width: 1400px) {
   .contacts_content {
-    left: -200px;
+    left: -150px;
   }
 
 }
 
 @media (max-width: 1280px) {
   .contacts_content {
-    left: -100px;
+    left: -75px;
   }
 }
 
@@ -106,5 +106,16 @@
 @media (max-width: 900px) {
   .contact_info {
     flex-direction: column;
+    @apply mx-auto gap-4;
+  }
+  .contact_info_wrapper {
+    display: flex;
+    flex-direction: column;
+    @apply gap-2;
+  }
+
+  .add_contact_paragraph {
+    padding-left: 0;
+    transform: translateX(0);
   }
 }
