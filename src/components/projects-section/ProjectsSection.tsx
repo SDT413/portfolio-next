@@ -65,7 +65,7 @@ function ProjectsSection() {
         "PostgreSQL",
       ],
       githubLink: "https://github.com/SDT413/coffee-shop",
-      liveDemoLink: "",
+      liveDemoLink: "https://coffee-supabase.vercel.app/",
       image: coffee_shop,
     },
     {
