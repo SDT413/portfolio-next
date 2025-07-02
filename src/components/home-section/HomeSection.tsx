@@ -51,8 +51,7 @@ const HomeSection: FC = ({}) => {
             <h3 className={styles.header3}>Fullstack Developer</h3>
           </div>
           <p className={styles.paragraph}>
-            I am a student at the University of Prague(PCU). I have 1 year
-            experience with react, wordpress and node.js.
+            I am a Computer Scientist with a Bachelor's degree and three years of professional experience in React, Next.js, and Node.js, along with other technologies.
           </p>
           <div className={styles.btn_box}>
             <button className={styles.btn} onClick={() => setShowHireForm(true)}>
