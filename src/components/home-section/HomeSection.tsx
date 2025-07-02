@@ -51,7 +51,7 @@ const HomeSection: FC = ({}) => {
             <h3 className={styles.header3}>Fullstack Developer</h3>
           </div>
           <p className={styles.paragraph}>
-            I am a Computer Scientist with a Bachelor's degree and three years of professional experience in React, Next.js, and Node.js, along with other technologies.
+            I am a Computer Scientist with a Bachelor&apos;s degree and three years of professional experience in React, Next.js, and Node.js, along with other technologies.
           </p>
           <div className={styles.btn_box}>
             <button className={styles.btn} onClick={() => setShowHireForm(true)}>

@@ -58,7 +58,7 @@ const About = () => {
       <div className={styles.about_content}>
         <h3 className={styles.header3}>Fullstack Developer</h3>
         <p className={styles.paragraph}>
-            I am a Computer Scientist with a Bachelor's degree and three years of professional experience in React, Next.js, and Node.js, along with other technologies.
+            I am a Computer Scientist with a Bachelor&apos;s degree and three years of professional experience in React, Next.js, and Node.js, along with other technologies.
         </p>
           <div className={classNames(styles.btn_box, styles.btns)} ref={cbRef}>
               <span className={styles.desktop_button}>
